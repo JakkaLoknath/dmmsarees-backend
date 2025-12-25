@@ -14,7 +14,10 @@ import com.example.demo.entities.UserCart;
 import com.example.demo.services.UserCartService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+		"http://localhost:5173",
+		"https://dmmsarees-frontend.vercel.app"
+})
 public class UserCartController 
 {
 	private UserCartService userCartService;

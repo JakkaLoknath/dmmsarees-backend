@@ -16,7 +16,10 @@ import com.example.demo.entities.Vendor;
 import com.example.demo.services.AdminService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+				"http://localhost:5173",
+				"https://dmmsarees-frontend.vercel.app"
+})
 public class AdminController 
 {
 	private AdminService adminService;
