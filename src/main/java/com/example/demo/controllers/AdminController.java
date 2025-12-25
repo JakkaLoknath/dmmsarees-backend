@@ -29,6 +29,12 @@ public class AdminController
 		this.adminService = adminService;
 	}
 	
+	@GetMapping("/health")
+	public String health()
+	{
+		return "ok";
+	}
+	
 	@PostMapping("/getadmin")
 	public Admin getAdmin(@RequestBody Admin admin)
 	{
